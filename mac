@@ -121,6 +121,16 @@ fancy_echo "Installing node, an enjoyable option for server side javascript ..."
   brew install node
 ### end mac-components/dev-environment
 
+YOUCOMPLETEME_DIR = "$HOME/.dotfiles/vim/bundle/YouCompleteMe/"
+
+if [[ -d "$YOUCOMPLETEME_DIR" ]]; then
+  fancy_echo "Compiling YouCompleteMe ..."
+    pushd $YOUCOMPLETEME_DIR
+    sh install.sh
+    popd
+fi
+### end common-components/you-complete-me
+
 fancy_echo "Installing Redis, a good key-value database ..."
   brew install redis
 

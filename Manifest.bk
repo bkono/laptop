@@ -10,6 +10,7 @@ mac-components/zsh-fix
 mac-components/homebrew
 mac-components/shell-tools
 mac-components/dev-environment
+common-components/you-complete-me
 mac-components/persistence
 mac-components/brew-cask
 mac-components/java
