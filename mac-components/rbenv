@@ -11,8 +11,11 @@ fancy_echo "Installing rbenv, to change Ruby versions ..."
 
   export PATH="$HOME/.rbenv/bin:$PATH"
 
-fancy_echo "Installing rbenv-gem-rehash so the shell automatically picks up binaries after installing gems with binaries..."
+fancy_echo "Installing rbenv-gem-rehash so the shell automatically picks up binaries after installing gems with binaries ..."
   brew install rbenv-gem-rehash
+
+fancy_echo "Installing rbenv-ctags, automagically giving us ctags for the ruby stdlibs ...'
+  brew install rbenv-ctags
 
 fancy_echo "Installing ruby-build, to install Rubies ..."
   brew install ruby-build
