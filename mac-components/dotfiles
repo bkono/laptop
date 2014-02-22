@@ -1,0 +1,5 @@
+fancy_echo "Installing bkonowitz/dotfiles, never leave home without them"
+  git clone https://github.com/bkonowitz/dotfiles.git $HOME/.dotfiles
+  pushd $HOME/.dotfiles
+  sh install.sh
+  popd

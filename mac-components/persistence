@@ -1,0 +1,5 @@
+fancy_echo "Installing Redis, a good key-value database ..."
+  brew install redis
+
+fancy_echo "Installing Sqlite, a good file based rdbms ..."
+  brew install sqlite
