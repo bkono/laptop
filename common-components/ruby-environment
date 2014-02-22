@@ -1,7 +1,8 @@
-versions = ("2.1.0" "jruby-1.7.10")
+versions=("2.1.0" "jruby-1.7.10")
 
 for version in ${versions[@]}
 do
+  RUBY_VERSION=$version
 
   fancy_echo "Installing Ruby $RUBY_VERSION ..."
     rbenv install $RUBY_VERSION

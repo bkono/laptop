@@ -1,0 +1,8 @@
+fancy_echo "Tapping caskroom/fonts ..."
+  brew tap caskroom/fonts
+
+fancy_echo "Installing anonymous pro, an excellent development font ..."
+  brew cask install font-anonymous-pro
+
+fancy_echo "Installing source code pro, an excellent terminal and development font ..."
+  brew cask install font-source-code-pro

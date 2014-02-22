@@ -1,0 +1,55 @@
+fancy_echo "Installing Alfred, the convenient application launcher and keyboard powerhouse ..."
+  brew cask install alfred
+  brew cask alfred link
+
+fancy_echo "Installing Google Chrome, for all those glorious web dev tools ..."
+  brew cask install google-chrome
+
+fancy_echo "Installing Firefox, yeah, its still useful ..."
+  brew cask install firefox
+
+fancy_echo "Installing Iterm2, the better Terminal for OSX ..."
+  brew cask install iterm2
+
+fancy_echo "Installing IntelliJ Community Edition, for all your java and scala development needs ..."
+  brew cask install intellij-idea-community
+
+fancy_echo "Installing AppCleaner, the right way to delete apps from OSX ..."
+  brew cask install appcleaner
+
+fancy_echo "Installing Caffeine, a jolt to keep your computer from going to sleep ..."
+  brew cask install caffeine
+
+fancy_echo "Installing Cyberduck, an excellent ftp, sftp, s3 file transfer tool ..."
+  brew cask install cyberduck
+
+fancy_echo "Installing Diffmerge, pairs nicely as the git difftool and mergetool ..."
+  brew cask install diffmerge
+
+fancy_echo "Installing Google Hangouts, a good video chat option ..."
+  brew cask install google-hangouts
+
+fancy_echo "Installing PgAdmin3, for managing Postgres DBs ..."
+  brew cask install pgadmin3
+
+fancy_echo "Installing Postgres App, a convenient self-contained postgres instance ..."
+  brew cask install postgres-app
+
+fancy_echo "Installing Skype, because unfortunately too many people use it not to ..."
+  brew cask install skype
+
+fancy_echo "Installing Sublime Text 2, a soup-du-jour editor ..."
+  brew cask install sublime-text
+
+fancy_echo "Installing Viscosity, an impressive OpenVPN client ..."
+  brew cask install viscosity
+
+fancy_echo "Installing Virtualbox, default vm provider for Vagrant ..."
+  brew cask install virtualbox
+
+fancy_echo "Installing Vagrant, self-contained virtual development environment management ..."
+  brew cask install vagrant
+
+fancy_echo "Installing VLC, for all those coding screencasts ..."
+  brew cask install vlc
+

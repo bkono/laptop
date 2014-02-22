@@ -1,0 +1,2 @@
+fancy_echo "Installing the jdk 7, a must for jruby dev ..."
+  brew cask install java
