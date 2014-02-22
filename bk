@@ -25,6 +25,8 @@ fancy_echo "Installing bkonowitz/dotfiles, never leave home without them"
 
   pushd $HOME/.dotfiles
   sh install.sh
+  pushd vim/bundle/YouCompleteMe/
+  sh install.sh
   popd
 ### end mac-components/dotfiles
 
@@ -125,6 +127,8 @@ fancy_echo "Installing Sqlite, a good file based rdbms ..."
 fancy_echo "Setting up homebrew casks, a convenient application installer based on homebrew ..."
   brew tap phinze/cask
   brew install brew-cask
+  export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 ### end mac-components/brew-cask
 
 fancy_echo "Installing the jdk 7, a must for jruby dev ..."
@@ -154,7 +158,7 @@ fancy_echo "Installing ruby-build, to install Rubies ..."
   brew install ruby-build
 ### end mac-components/rbenv
 
-versions=("2.1.0" "jruby-1.7.10")
+versions=("jruby-1.7.10" "2.1.0")
 
 for version in ${versions[@]}
 do

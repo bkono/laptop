@@ -134,7 +134,7 @@ if [[ ! -d "$HOME/.rbenv/plugins/ruby-build" ]]; then
 fi
 ### end linux-components/rbenv
 
-versions=("2.1.0" "jruby-1.7.10")
+versions=("jruby-1.7.10" "2.1.0")
 
 for version in ${versions[@]}
 do
