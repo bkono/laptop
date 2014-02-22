@@ -1,0 +1,14 @@
+fancy_echo "Installing md5sha1sum, for those vital sha1 compares..."
+  brew install md5sha1sum
+
+fancy_echo "Installing openssl ..."
+  brew install openssl
+
+fancy_echo "Installing cmake ..."
+  brew install cmake
+
+fancy_echo "Installing tree, a pretty directory visualizer for the shell ..."
+  brew install tree
+
+fancy_echo "Installing watch, to execute a program periodically and show the output ..."
+  brew install watch

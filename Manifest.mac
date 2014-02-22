@@ -1,16 +1,20 @@
 common-components/bash-shebang
 common-components/header
 common-components/exit-trap
+; pull dotfiles here
 common-components/check-home-bin
 common-components/shared-functions
 common-components/zsh
 mac-components/zsh-fix
 mac-components/homebrew
-mac-components/packages
+; shell tools
+; dev environment
+; persistence
+; mac-components/packages
 mac-components/rbenv
-mac-components/compiler-and-libraries
+; mac-components/compiler-and-libraries
 common-components/ruby-environment
 mac-components/bundler
-common-components/default-gems
+; common-components/default-gems
 mac-components/heroku
-mac-components/rcm
+; mac-components/rcm
