@@ -1,18 +1,35 @@
-RUBY_VERSION="2.1.0"
+versions = ("2.1.0" "jruby-1.7.10")
 
-fancy_echo "Installing Ruby $RUBY_VERSION ..."
-  rbenv install $RUBY_VERSION
+for version in ${versions[@]}
+do
 
-fancy_echo "Setting $RUBY_VERSION as global default Ruby ..."
-  rbenv global $RUBY_VERSION
-  rbenv rehash
+  fancy_echo "Installing Ruby $RUBY_VERSION ..."
+    rbenv install $RUBY_VERSION
 
-fancy_echo "Updating to latest Rubygems version ..."
-  gem update --system
+  fancy_echo "Setting $RUBY_VERSION as global default Ruby ..."
+    rbenv global $RUBY_VERSION
+    rbenv rehash
 
-fancy_echo "Installing Bundler to install project-specific Ruby gems ..."
-  gem install bundler --no-document --pre
+  fancy_echo "Updating to latest Rubygems version ..."
+    gem update --system
 
-fancy_echo "Installing GitHub CLI client ..."
-  curl http://hub.github.com/standalone -sLo ~/.bin/hub
-  chmod +x ~/.bin/hub
+  fancy_echo "Installing Bundler to install project-specific Ruby gems ..."
+    gem install bundler --no-document
+
+  fancy_echo "Installing rails ..."
+    gem install rails --no-document
+
+  fancy_echo "Installing rspec, because lets face it, ruby just isn't the same without it ..."
+    gem install rspec --no-document
+
+  fancy_echo "Installing guard for smooth development flow..."
+    gem install guard --no-document
+
+  fancy_echo "Installing thor for command line utilities ..."
+    gem install thor --no-document
+
+done
+
+  fancy_echo "Installing GitHub CLI client ..."
+    curl http://hub.github.com/standalone -sLo ~/.bin/hub
+    chmod +x ~/.bin/hub
