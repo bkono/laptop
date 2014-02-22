@@ -29,8 +29,6 @@ fancy_echo "Installing bkonowitz/dotfiles, never leave home without them"
 
   pushd $HOME/.dotfiles
   sh install.sh
-  pushd vim/bundle/YouCompleteMe/
-  sh install.sh
   popd
 ### end mac-components/dotfiles
 
