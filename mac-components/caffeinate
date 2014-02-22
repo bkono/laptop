@@ -1,0 +1,2 @@
+fancy_echo "Kicking off a caffeinate process to keep the machine awake long enough to complete the script ..."
+  caffeinate -u -t 1800 &

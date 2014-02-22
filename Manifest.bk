@@ -2,6 +2,7 @@ common-components/bash-shebang
 common-components/header
 common-components/exit-trap
 common-components/shared-functions
+mac-components/caffeinate
 mac-components/dotfiles
 common-components/check-home-bin
 common-components/zsh
