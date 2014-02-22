@@ -1,0 +1,29 @@
+fancy_echo "Installing ctags, to index files for vim tab completion of methods, classes, variables ..."
+  brew install ctags
+
+fancy_echo "Installing git, to simplify maintaining an updated version ..."
+  brew install git
+
+fancy_echo "Installing macvim, a great editor even from the terminal ..."
+  brew install macvim --override-system-vim
+
+fancy_echo "Installing The Silver Searcher (better than ack or grep) to search the contents of files ..."
+  brew install the_silver_searcher
+
+fancy_echo "Installing tmux, to save project state and switch between projects ..."
+  brew install tmux
+
+fancy_echo "Installing reattach-to-user-namespace, for copy-paste and RubyMotion compatibility with tmux ..."
+  brew install reattach-to-user-namespace
+
+fancy_echo "Installing maven, for those java and scala dependency management needs ..."
+  brew install maven
+
+fancy_echo "Installing scala, a great functional and OO hybrid language ..."
+  brew install scala
+
+fancy_echo "Installing sbt, the build tool of choice for scala ..."
+  brew install sbt
+
+fancy_echo "Installing node, an enjoyable option for server side javascript ..."
+  brew install node
