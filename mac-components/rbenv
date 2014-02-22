@@ -4,10 +4,10 @@ fancy_echo "Installing rbenv, to change Ruby versions ..."
   if ! grep -qs "rbenv init" ~/.zshrc; then
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
     echo 'eval "$(rbenv init - --no-rehash)"' >> ~/.zshrc
-
-    fancy_echo "Enable shims and autocompletion ..."
-      eval "$(rbenv init -)"
   fi
+
+  fancy_echo "Enable shims and autocompletion ..."
+    eval "$(rbenv init -)"
 
   export PATH="$HOME/.rbenv/bin:$PATH"
 
