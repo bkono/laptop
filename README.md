@@ -76,6 +76,14 @@ This is not a fully unattended install. At the beginning, and throughout the
 application installs, you will be prompted for your password periodically. Best to
 keep half an eye on the installation to keep it moving.
 
+During the Mac and BK installs, your password will be needed at the following times:
+
+- shell change to zsh (beginning)
+- fixing zsh environment bug (first use of sudo, beginning)
+- google-hangouts (middle)
+- virtualbox (middle)
+- crashplan (late)
+
 What it sets up
 ---------------
 
