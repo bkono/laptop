@@ -301,11 +301,11 @@ fancy_echo "Installing VLC, for all those coding screencasts ..."
 fancy_echo "Installing 1Password, because using the same password twice is just evil ..."
   brew cask install onepassword
 
+fancy_echo "Installing Calibre, a powerful and unintuitive eBook manager ..."
+  brew cask install calibre
+
 fancy_echo "Installing Chromecast, for setting up the surprisingly useful little streamer ..."
   brew cask install chromecast
-
-fancy_echo "Installing Dropbox, the best cloud syncing solution available today ..."
-  brew cask install dropbox
 
 fancy_echo "Installing Cloak, the vpn you can forget to use while still being protected ..."
   brew cask install cloak
@@ -313,14 +313,20 @@ fancy_echo "Installing Cloak, the vpn you can forget to use while still being pr
 fancy_echo "Installing Crashplan, because loosing data bytes ..."
   brew cask install crashplan
 
-fancy_echo "Installing Prizmo, an acceptable scan and ocr solution ..."
-  brew cask install prizmo
+fancy_echo "Installing DevonTHINK Pro, for an offline Evernote-like experience ..."
+  brew cask install devonthink-pro
 
-fancy_echo "Installing Calibre, a powerful and unintuitive eBook manager ..."
-  brew cask install calibre
+fancy_echo "Installing Dropbox, the best cloud syncing solution available today ..."
+  brew cask install dropbox
 
 fancy_echo "Installing f.lux, a tool to help you sleep better through tweaking the colors on your monitor ..."
   brew cask install f-lux
+
+fancy_echo "Installing Master Key, a decent little typing tutor ..."
+  brew cask install https://raw2.github.com/bkonowitz/homebrew-cask/master-key/Casks/master-key.rb
+
+fancy_echo "Installing Prizmo, an acceptable scan and ocr solution ..."
+  brew cask install prizmo
 
 fancy_echo "Installing Send-to-kindle, for the convenience of reading on the go ..."
   brew cask install send-to-kindle
