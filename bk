@@ -288,7 +288,7 @@ fancy_echo "Installing VLC, for all those coding screencasts ..."
 ### end mac-components/must-have-casks
 
 fancy_echo "Installing 1Password, because using the same password twice is just evil ..."
-  brew cask install one-password
+  brew cask install onepassword
 
 fancy_echo "Installing Chromecast, for setting up the surprisingly useful little streamer ..."
   brew cask install chromecast
