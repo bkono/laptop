@@ -73,7 +73,7 @@ installed Iterm2) to fully load the new development environment.
 ### Universal
 
 This is not a fully unattended install. At the beginning, and throughout the
-application installs, you will be prompted for password periodically. Best to
+application installs, you will be prompted for your password periodically. Best to
 keep half an eye on the installation to keep it moving.
 
 What it sets up
@@ -115,6 +115,10 @@ To get going, simply create a new Manifest.foo file and list each component in
 the order you want the install to proceed. Use the existing components as an
 example, and add more for any functionality or configuration that helps get your
 development environment setup 'just right'.
+
+Once your Manifest file is setup, run bin/build.sh. This will cause all Manifest.xxxx
+files to rebuild into single scripts named by their extension. Execute the newly
+created version, and enjoy!
 
 Original Credits
 -------
