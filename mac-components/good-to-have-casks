@@ -25,6 +25,9 @@ fancy_echo "Installing f.lux, a tool to help you sleep better through tweaking t
 fancy_echo "Installing Send-to-kindle, for the convenience of reading on the go ..."
   brew cask install send-to-kindle
 
+fancy_echo "Installing Spectacle, a simple keyboard based window mover ..."
+  brew cask install spectacle
+
 fancy_echo "Installing Teamviewer, a solid choice for interactive screen shares ..."
   brew cask install teamviewer
 
