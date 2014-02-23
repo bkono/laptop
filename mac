@@ -56,6 +56,16 @@ if [[ -f /etc/zshenv ]]; then
 fi
 ### end mac-components/zsh-fix
 
+fancy_echo "Setting trackpad tap to click ..."
+  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+  defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+  defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+fancy_echo "Setting three finger swipe for App Expose ..."
+  defaults write com.apple.dock showAppExposeGestureEnabled -int 1
+
+### end mac-components/trackpad
+
 if ! which brew &>/dev/null; then
   fancy_echo "Installing Homebrew, a good OS X package manager ..."
     ruby <(curl -fsS https://raw.github.com/Homebrew/homebrew/go/install)
