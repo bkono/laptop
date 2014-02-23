@@ -38,6 +38,9 @@ fancy_echo "Installing Postgres App, a convenient self-contained postgres instan
 fancy_echo "Installing Skype, because unfortunately too many people use it not to ..."
   brew cask install skype
 
+fancy_echo "Installing Sophos Antivirus, because the ops man sayeth ..."
+  brew cask install sophos-antivirus
+
 fancy_echo "Installing Sublime Text 2, a soup-du-jour editor ..."
   brew cask install sublime-text
 
