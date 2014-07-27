@@ -4,8 +4,9 @@
 brew tap caskroom/cask
 brew_install_or_upgrade 'caskroom/cask/brew-cask'
 
-# brew-versions
+# various brew versions
 brew tap homebrew/versions
+brew tap caskroom/versions
 
 # dotfiles
 fancy_echo "Installing bkonowitz/dotfiles, never leave home without them"
@@ -70,7 +71,7 @@ fancy_echo "Installing tree, a pretty directory visualizer for the shell ..."
 
 # java
 fancy_echo "Installing the jdk 7, a must for jruby dev ..."
-  brew cask install java
+  brew cask install java7
 
 # additional rubies
 versions=("jruby-1.7.10" "2.1.0")
@@ -125,7 +126,7 @@ fancy_echo "Installing Firefox, yeah, its still useful ..."
   brew cask install firefox
 
 fancy_echo "Installing Iterm2, the better Terminal for OSX ..."
-  brew cask install iterm2
+  brew cask install iterm2-beta
 
 fancy_echo "Installing IntelliJ Community Edition, for all your java and scala development needs ..."
   brew cask install intellij-idea-community
@@ -157,8 +158,8 @@ fancy_echo "Installing Skype, because unfortunately too many people use it not t
 fancy_echo "Installing Sophos Antivirus, because the ops man sayeth ..."
   brew cask install sophos-antivirus
 
-fancy_echo "Installing Sublime Text 2, a soup-du-jour editor ..."
-  brew cask install sublime-text
+fancy_echo "Installing Sublime Text 3, a soup-du-jour editor ..."
+  brew cask install sublime-text3
 
 fancy_echo "Installing Viscosity, an impressive OpenVPN client ..."
   brew cask install viscosity
