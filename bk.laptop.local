@@ -132,7 +132,7 @@ fancy_echo "Installing Iterm2, the better Terminal for OSX ..."
   brew cask install iterm2-beta
 
 fancy_echo "Installing IntelliJ Community Edition, for all your java and scala development needs ..."
-  brew cask install intellij-idea-community
+  brew cask install intellij-idea-ce
 
 fancy_echo "Installing AppCleaner, the right way to delete apps from OSX ..."
   brew cask install appcleaner
