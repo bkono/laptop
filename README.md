@@ -35,23 +35,23 @@ Install
 
 Read, then run the script:
 
-    bash <(curl -s https://raw.githubusercontent.com/thoughtbot/laptop/master/mac) |& tee ~/laptop.log
+    bash <(curl -s https://raw.githubusercontent.com/bkonowitz/laptop/master/mac) |& tee ~/laptop.log
 
 ### Linux
 
 Read, then run the script:
 
-    bash <(wget -qO- https://raw.githubusercontent.com/thoughtbot/laptop/master/linux) |& tee ~/laptop.log
+    bash <(wget -qO- https://raw.githubusercontent.com/bkonowitz/laptop/master/linux) |& tee ~/laptop.log
 
 ### BK Approved setup
 
 Prior to following the Mac instructions above run:
 
-    bash <(curl -s https://raw.github.com/bkonowitz/laptop/master/bk.laptop.local ~/.laptop.local)
+    curl -o ~/.laptop.local https://raw.githubusercontent.com/bkonowitz/laptop/master/bk.laptop.local
 
 Read, then run the script:
 
-    bash <(curl -s https://raw.github.com/bkonowitz/laptop/master/bk)
+    bash <(curl -s https://raw.githubusercontent.com/bkonowitz/laptop/master/mac) |& tee ~/laptop.log
 
 After the script completes, open a new shell (or preferably, switch to the newly
 installed Iterm2) to fully load the new development environment.
