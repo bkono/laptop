@@ -32,6 +32,10 @@ fancy_echo() {
 }
 ### end common-components/shared-functions
 
+fancy_echo "Kicking off a caffeinate process to keep the machine awake long enough to complete the script ..."
+  caffeinate -u -t 1800 &
+### end mac-components/caffeinate
+
 fancy_echo "Changing your shell to zsh ..."
   chsh -s $(which zsh)
 ### end common-components/zsh

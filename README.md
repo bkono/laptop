@@ -43,6 +43,19 @@ Read, then run the script:
 
     bash <(wget -qO- https://raw.githubusercontent.com/thoughtbot/laptop/master/linux) |& tee ~/laptop.log
 
+### BK Approved setup
+
+Prior to following the Mac instructions above run:
+
+    bash <(curl -s https://raw.github.com/bkonowitz/laptop/master/bk.laptop.local ~/.laptop.local)
+
+Read, then run the script:
+
+    bash <(curl -s https://raw.github.com/bkonowitz/laptop/master/bk)
+
+After the script completes, open a new shell (or preferably, switch to the newly
+installed Iterm2) to fully load the new development environment.
+
 Debugging
 ---------
 
