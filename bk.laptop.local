@@ -160,7 +160,7 @@ fancy_echo "Installing Skype, because unfortunately too many people use it not t
   brew cask install skype
 
 fancy_echo "Installing Sophos Antivirus, because the ops man sayeth ..."
-  brew cask install sophos-antivirus
+  brew cask install sophos-anti-virus-home-edition
 
 fancy_echo "Installing Sublime Text 3, a soup-du-jour editor ..."
   brew cask install sublime-text3
@@ -203,7 +203,7 @@ fancy_echo "Installing Dropbox, the best cloud syncing solution available today 
   brew cask install dropbox
 
 fancy_echo "Installing f.lux, a tool to help you sleep better through tweaking the colors on your monitor ..."
-  brew cask install f-lux
+  brew cask install flux
 
 fancy_echo "Installing Parallels 8, a decent vm for OSX ..."
   brew cask install parallels8
