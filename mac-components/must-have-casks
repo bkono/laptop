@@ -26,8 +26,8 @@ fancy_echo "Installing Cyberduck, an excellent ftp, sftp, s3 file transfer tool 
 fancy_echo "Installing Diffmerge, pairs nicely as the git difftool and mergetool ..."
   brew cask install diffmerge
 
-fancy_echo "Installing Google Hangouts, a good video chat option ..."
-  brew cask install google-hangouts
+# fancy_echo "Installing Google Hangouts, a good video chat option ..."
+  # brew cask install google-hangouts
 
 fancy_echo "Installing PgAdmin3, for managing Postgres DBs ..."
   brew cask install pgadmin3

@@ -120,11 +120,23 @@ fancy_echo "Installing maven, for those java and scala dependency management nee
 fancy_echo "Installing scala, a great functional and OO hybrid language ..."
   brew install scala
 
+fancy_echo "Installing scala 2.10.x, a great functional and OO hybrid language ..."
+  brew install scala210
+
 fancy_echo "Installing sbt, the build tool of choice for scala ..."
   brew install sbt
 
 fancy_echo "Installing node, an enjoyable option for server side javascript ..."
   brew install node
+
+fancy_echo "Installing erlang, an excellent distributed computing language and vm ..."
+  brew install erlang
+
+fancy_echo "Installing elixir, a brilliant language running on top of the erlang vm ..."
+  brew install elixir
+
+fancy_echo "Installing protobuf, an efficient binary protocol from google ..."
+  brew install protobuf
 ### end mac-components/dev-environment
 
 YOUCOMPLETEME_DIR="$HOME/.dotfiles/vim/bundle/YouCompleteMe/"
@@ -145,8 +157,7 @@ fancy_echo "Installing Sqlite, a good file based rdbms ..."
 ### end mac-components/persistence
 
 fancy_echo "Setting up homebrew casks, a convenient application installer based on homebrew ..."
-  brew tap phinze/cask
-  brew install brew-cask
+  brew install caskroom/cask/brew-cask
   export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ### end mac-components/brew-cask
@@ -266,8 +277,8 @@ fancy_echo "Installing Cyberduck, an excellent ftp, sftp, s3 file transfer tool 
 fancy_echo "Installing Diffmerge, pairs nicely as the git difftool and mergetool ..."
   brew cask install diffmerge
 
-fancy_echo "Installing Google Hangouts, a good video chat option ..."
-  brew cask install google-hangouts
+# fancy_echo "Installing Google Hangouts, a good video chat option ..."
+  # brew cask install google-hangouts
 
 fancy_echo "Installing PgAdmin3, for managing Postgres DBs ..."
   brew cask install pgadmin3
@@ -301,6 +312,9 @@ fancy_echo "Installing VLC, for all those coding screencasts ..."
 fancy_echo "Installing 1Password, because using the same password twice is just evil ..."
   brew cask install onepassword
 
+fancy_echo "Installing Adium, an OTR supporting IM client ..."
+  brew cask install adium
+
 fancy_echo "Installing Calibre, a powerful and unintuitive eBook manager ..."
   brew cask install calibre
 
@@ -322,26 +336,26 @@ fancy_echo "Installing Dropbox, the best cloud syncing solution available today 
 fancy_echo "Installing f.lux, a tool to help you sleep better through tweaking the colors on your monitor ..."
   brew cask install f-lux
 
-fancy_echo "Installing Master Key, a decent little typing tutor ..."
-  brew cask install https://raw2.github.com/bkonowitz/homebrew-cask/master-key/Casks/master-key.rb
+# fancy_echo "Installing Master Key, a decent little typing tutor ..."
+#  brew cask install https://raw2.github.com/bkonowitz/homebrew-cask/master-key/Casks/master-key.rb
 
-fancy_echo "Installing Prizmo, an acceptable scan and ocr solution ..."
-  brew cask install prizmo
+# fancy_echo "Installing Prizmo, an acceptable scan and ocr solution ..."
+#  brew cask install prizmo
 
-fancy_echo "Installing Send-to-kindle, for the convenience of reading on the go ..."
-  brew cask install send-to-kindle
+# fancy_echo "Installing Send-to-kindle, for the convenience of reading on the go ..."
+#  brew cask install send-to-kindle
 
-fancy_echo "Installing Spectacle, a simple keyboard based window mover ..."
-  brew cask install spectacle
+# fancy_echo "Installing Spectacle, a simple keyboard based window mover ..."
+#  brew cask install spectacle
 
-fancy_echo "Installing Teamviewer, a solid choice for interactive screen shares ..."
-  brew cask install teamviewer
+# fancy_echo "Installing Teamviewer, a solid choice for interactive screen shares ..."
+#  brew cask install teamviewer
 
 fancy_echo "Installing TrueCrypt, a great open source volume encryption tool ..."
   brew cask install truecrypt
 
 fancy_echo "Installing uTorrent, for those legal p2p needs ..."
   brew cask install utorrent
-  
+
 ### end mac-components/good-to-have-casks
 

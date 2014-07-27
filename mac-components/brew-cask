@@ -1,5 +1,4 @@
 fancy_echo "Setting up homebrew casks, a convenient application installer based on homebrew ..."
-  brew tap phinze/cask
-  brew install brew-cask
+  brew install caskroom/cask/brew-cask
   export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 

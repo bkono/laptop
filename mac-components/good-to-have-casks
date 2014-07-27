@@ -1,6 +1,9 @@
 fancy_echo "Installing 1Password, because using the same password twice is just evil ..."
   brew cask install onepassword
 
+fancy_echo "Installing Adium, an OTR supporting IM client ..."
+  brew cask install adium
+
 fancy_echo "Installing Calibre, a powerful and unintuitive eBook manager ..."
   brew cask install calibre
 
@@ -22,24 +25,24 @@ fancy_echo "Installing Dropbox, the best cloud syncing solution available today 
 fancy_echo "Installing f.lux, a tool to help you sleep better through tweaking the colors on your monitor ..."
   brew cask install f-lux
 
-fancy_echo "Installing Master Key, a decent little typing tutor ..."
-  brew cask install https://raw2.github.com/bkonowitz/homebrew-cask/master-key/Casks/master-key.rb
+# fancy_echo "Installing Master Key, a decent little typing tutor ..."
+#  brew cask install https://raw2.github.com/bkonowitz/homebrew-cask/master-key/Casks/master-key.rb
 
-fancy_echo "Installing Prizmo, an acceptable scan and ocr solution ..."
-  brew cask install prizmo
+# fancy_echo "Installing Prizmo, an acceptable scan and ocr solution ..."
+#  brew cask install prizmo
 
-fancy_echo "Installing Send-to-kindle, for the convenience of reading on the go ..."
-  brew cask install send-to-kindle
+# fancy_echo "Installing Send-to-kindle, for the convenience of reading on the go ..."
+#  brew cask install send-to-kindle
 
-fancy_echo "Installing Spectacle, a simple keyboard based window mover ..."
-  brew cask install spectacle
+# fancy_echo "Installing Spectacle, a simple keyboard based window mover ..."
+#  brew cask install spectacle
 
-fancy_echo "Installing Teamviewer, a solid choice for interactive screen shares ..."
-  brew cask install teamviewer
+# fancy_echo "Installing Teamviewer, a solid choice for interactive screen shares ..."
+#  brew cask install teamviewer
 
 fancy_echo "Installing TrueCrypt, a great open source volume encryption tool ..."
   brew cask install truecrypt
 
 fancy_echo "Installing uTorrent, for those legal p2p needs ..."
   brew cask install utorrent
-  
+
