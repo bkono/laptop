@@ -26,39 +26,6 @@ fancy_echo "Setting trackpad tap to click ..."
 fancy_echo "Setting three finger swipe for App Expose ..."
   defaults write com.apple.dock showAppExposeGestureEnabled -int 1
 
-# additional rubies
-versions=("jruby-1.7.10" "2.1.0")
-
-for version in ${versions[@]}
-do
-  RUBY_VERSION=$version
-
-  fancy_echo "Installing Ruby $RUBY_VERSION ..."
-    rbenv install -s "$RUBY_VERSION"
-
-  fancy_echo "Setting $RUBY_VERSION as global default Ruby ..."
-    rbenv global "$RUBY_VERSION"
-    rbenv rehash
-
-  fancy_echo "Updating to latest Rubygems version ..."
-    gem update --system
-
-  fancy_echo "Installing Bundler to install project-specific Ruby gems ..."
-    gem install bundler --no-document --pre
-
-  fancy_echo "Installing rails ..."
-    gem install rails --no-document
-
-  fancy_echo "Installing rspec, because lets face it, ruby just isn't the same without it ..."
-    gem install rspec --no-document
-
-  fancy_echo "Installing guard for smooth development flow..."
-    gem install guard --no-document
-
-  fancy_echo "Installing thor for command line utilities ..."
-    gem install thor --no-document
-
-done
 
 # dev environment
 fancy_echo "Installing git, to simplify maintaining an updated version ..."
@@ -104,6 +71,40 @@ fancy_echo "Installing tree, a pretty directory visualizer for the shell ..."
 # java
 fancy_echo "Installing the jdk 7, a must for jruby dev ..."
   brew cask install java
+
+# additional rubies
+versions=("jruby-1.7.10" "2.1.0")
+
+for version in ${versions[@]}
+do
+  RUBY_VERSION=$version
+
+  fancy_echo "Installing Ruby $RUBY_VERSION ..."
+    rbenv install -s "$RUBY_VERSION"
+
+  fancy_echo "Setting $RUBY_VERSION as global default Ruby ..."
+    rbenv global "$RUBY_VERSION"
+    rbenv rehash
+
+  fancy_echo "Updating to latest Rubygems version ..."
+    gem update --system
+
+  fancy_echo "Installing Bundler to install project-specific Ruby gems ..."
+    gem install bundler --no-document --pre
+
+  fancy_echo "Installing rails ..."
+    gem install rails --no-document
+
+  fancy_echo "Installing rspec, because lets face it, ruby just isn't the same without it ..."
+    gem install rspec --no-document
+
+  fancy_echo "Installing guard for smooth development flow..."
+    gem install guard --no-document
+
+  fancy_echo "Installing thor for command line utilities ..."
+    gem install thor --no-document
+
+done
 
 # fonts
 fancy_echo "Installing anonymous pro, an excellent development font ..."
