@@ -152,9 +152,6 @@ fancy_echo "Installing Diffmerge, pairs nicely as the git difftool and mergetool
 fancy_echo "Installing PgAdmin3, for managing Postgres DBs ..."
   brew cask install pgadmin3
 
-fancy_echo "Installing Postgres App, a convenient self-contained postgres instance ..."
-  brew cask install postgres-app
-
 fancy_echo "Installing Skype, because unfortunately too many people use it not to ..."
   brew cask install skype
 
