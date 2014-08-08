@@ -67,15 +67,18 @@ fancy_echo "Installing elixir, a brilliant language running on top of the erlang
 fancy_echo "Installing protobuf, an efficient binary protocol from google ..."
   brew_install_or_upgrade 'protobuf'
 
+fancy_echo "Installing boot2docker, a lightweight ubuntu for docker to use ..."
+  brew_install_or_upgrade 'boot2docker'
+
 # shell tools
 fancy_echo "Installing md5sha1sum, for those vital sha1 compares..."
-  brew install md5sha1sum
+  brew_install_or_upgrade md5sha1sum
 
 fancy_echo "Installing cmake ..."
-  brew install cmake
+  brew_install_or_upgrade cmake
 
 fancy_echo "Installing tree, a pretty directory visualizer for the shell ..."
-  brew install tree
+  brew_install_or_upgrade  tree
 
 # java
 fancy_echo "Installing the jdk 7, a must for jruby dev ..."
