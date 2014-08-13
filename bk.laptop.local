@@ -41,7 +41,7 @@ fancy_echo "Installing git, to simplify maintaining an updated version ..."
   brew_install_or_upgrade 'git'
 
 fancy_echo "Installing macvim, a great editor even from the terminal ..."
-  brew_install_or_upgrade 'macvim' '--override-system-vim'
+  brew_install_or_upgrade 'macvim' '--override-system-vim --with-cscope --with-lua'
 
 fancy_echo "Installing maven, for those java and scala dependency management needs ..."
   brew_install_or_upgrade 'maven'
