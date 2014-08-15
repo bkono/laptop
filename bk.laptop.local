@@ -123,7 +123,14 @@ fancy_echo "Installing anonymous pro, an excellent development font ..."
   brew cask install font-anonymous-pro
 
 fancy_echo "Installing source code pro, an excellent terminal and development font ..."
-  brew cask install font-source-code-pro
+  brew cask install font-sauce-code-powerline
+
+# powerline
+fancy_echo "Installing python, because some things just require it ..."
+  brew_install_or_upgrade 'python'
+
+fancy_echo "Installing powerline, for cool status bar stuff ..."
+  pip install git+git://github.com/Lokaltog/powerline
 
 # must have casks
 fancy_echo "Installing Alfred, the convenient application launcher and keyboard powerhouse ..."
