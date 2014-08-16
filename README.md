@@ -18,6 +18,14 @@ XCode](https://developer.apple.com/downloads/index.action).
 
 For Mavericks (10.9): installed with the script, no prerequisite.
 
+_BK Note_
+On fresh installs of Mavericks I have had a variety of issues when not doing the
+previous pre-req steps. To prevent issues, I recommend:
+
+    Install Xcode
+    Run `sudo xcodebuild -license` # be sure to agree to the license
+    Run `xcode-select --install`   # follow the dialog box prompts
+
 ### Linux
 
 We support:
@@ -35,26 +43,30 @@ Install
 
 Read, then run the script:
 
-    bash <(curl -s https://raw.githubusercontent.com/bkonowitz/laptop/master/mac) |& tee ~/laptop.log
+    bash <(curl -s https://raw.githubusercontent.com/bkonowitz/laptop/master/mac) 2>&1 tee ~/laptop.log
 
-### Linux
+### linux
 
-Read, then run the script:
+read, then run the script:
 
-    bash <(wget -qO- https://raw.githubusercontent.com/bkonowitz/laptop/master/linux) |& tee ~/laptop.log
+    bash <(wget -qo- https://raw.githubusercontent.com/bkonowitz/laptop/master/linux) 2>&1 tee ~/laptop.log
 
-### BK Approved setup
+### bk approved setup
 
-Prior to following the Mac instructions above run:
+prior to following the mac instructions above run:
 
     curl -o ~/.laptop.local https://raw.githubusercontent.com/bkonowitz/laptop/master/bk.laptop.local
 
-Read, then run the script:
+read, then run the script:
 
-    bash <(curl -s https://raw.githubusercontent.com/bkonowitz/laptop/master/mac) |& tee ~/laptop.log
+    bash <(curl -s https://raw.githubusercontent.com/bkonowitz/laptop/master/mac) 2>&1 tee ~/laptop.log
 
 After the script completes, open a new shell (or preferably, switch to the newly
 installed Iterm2) to fully load the new development environment.
+
+_BK Note_
+The |& approach was causing issues on fresh builds in terminal. Swapped back to
+old style of 2>&1.
 
 Debugging
 ---------
