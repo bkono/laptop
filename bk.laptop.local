@@ -86,7 +86,7 @@ fancy_echo "Installing the jdk 7, a must for jruby dev ..."
   brew cask install java7
 
 # additional rubies
-versions=("jruby-1.7.10" "2.1.0")
+versions=("jruby-1.7.16" "2.1.2")
 
 for version in ${versions[@]}
 do
