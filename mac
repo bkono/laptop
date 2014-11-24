@@ -46,7 +46,7 @@ brew_install_or_upgrade() {
       brew upgrade "$@"
     fi
   else
-    brew install "$@"
+    brew install --force "$@"
   fi
 }
 
@@ -118,7 +118,7 @@ fancy_echo "Installing The Silver Searcher (better than ack or grep) to search t
   brew_install_or_upgrade 'the_silver_searcher'
 
 fancy_echo "Installing vim from Homebrew to get the latest version ..."
-  brew_install_or_upgrade 'vim'
+  # brew_install_or_upgrade 'vim'
 
 fancy_echo "Installing ctags, to index files for vim tab completion of methods, classes, variables ..."
   brew_install_or_upgrade 'ctags'

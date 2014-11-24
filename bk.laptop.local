@@ -56,8 +56,8 @@ fancy_echo "Installing scala 2.10.x, a great functional and OO hybrid language .
 fancy_echo "Installing sbt, the build tool of choice for scala ..."
   brew_install_or_upgrade 'sbt'
 
-fancy_echo "Installing node, an enjoyable option for server side javascript ..."
-  brew_install_or_upgrade 'node'
+# fancy_echo "Installing node, an enjoyable option for server side javascript ..."
+#   brew_install_or_upgrade 'node'
 
 fancy_echo "Installing erlang, an excellent distributed computing language and vm ..."
   brew_install_or_upgrade 'erlang'
@@ -118,6 +118,10 @@ do
     gem install thor --no-document
 
 done
+
+# coreutils
+fancy_echo "Installing GNU coreutils, for the goodies that OSX forgot ..."
+  brew_install_or_upgrade coreutils
 
 # fonts
 fancy_echo "Installing anonymous pro, an excellent development font ..."
