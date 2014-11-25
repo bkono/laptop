@@ -85,6 +85,26 @@ fancy_echo "Installing tree, a pretty directory visualizer for the shell ..."
 fancy_echo "Installing the jdk 7, a must for jruby dev ..."
   brew cask install java7
 
+# MEAN stack
+fancy_echo "Installing MongoDB, the M in MEAN Stack ..."
+  brew_install_or_upgrade mongodb
+
+fancy_echo "Installing CoffeeScript, because Thoughtbots best practices for javascript are 'Use coffeescript' ..."
+  npm install -g coffee-script
+
+fancy_echo "Installing Bower, for client side dependency management goodness ..."
+  npm install -g bower
+
+fancy_echo "Install Grunt CLI, because the Grunt vs Gulp battles still wage on ..."
+  npm install -g grunt-cli
+
+fancy_echo "Installing Gulp, because it will eventually win the battle ..."
+  npm install -g gulp
+
+fancy_echo "Installing Express, the E in MEAN and defacto web server core in node ..."
+  npm install -g express
+  npm install -g express-generator
+
 # additional rubies
 versions=("jruby-1.7.16")
 
@@ -117,6 +137,8 @@ do
   fancy_echo "Installing thor for command line utilities ..."
     gem install thor --no-document
 
+  fancy_echo "Installing sass, for css you can stomach ..."
+    gem install sass
 done
 
 # coreutils
