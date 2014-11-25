@@ -1,4 +1,19 @@
 #!/bin/sh
+brew_cask_expand_alias() {
+  brew cask info "$1" 2>/dev/null | head -1 | awk '{gsub(/:/, ""); print $1}'
+}
+
+brew_cask_is_installed() {
+  local NAME=$(brew_cask_expand_alias "$1")
+
+  brew cask list -1 | grep -Fqx "$NAME"
+}
+
+brew_cask_install_or_upgrade() {
+  if ! brew_cask_is_installed "$1"; then
+    brew cask install $1
+  fi
+}
 
 # brew-caskroom
 brew tap caskroom/cask
@@ -83,7 +98,7 @@ fancy_echo "Installing tree, a pretty directory visualizer for the shell ..."
 
 # java
 fancy_echo "Installing the jdk 7, a must for jruby dev ..."
-  brew cask install java7
+  brew_cask_install_or_upgrade install java7
 
 # configure redis to auto-launch
 fancy_echo "Configure redis to autolaunch ..."
@@ -154,10 +169,10 @@ fancy_echo "Installing GNU coreutils, for the goodies that OSX forgot ..."
 
 # fonts
 fancy_echo "Installing anonymous pro, an excellent development font ..."
-  brew cask install font-anonymous-pro
+  brew_cask_install_or_upgrade install font-anonymous-pro
 
 fancy_echo "Installing source code pro, an excellent terminal and development font ..."
-  brew cask install font-sauce-code-powerline
+  brew_cask_install_or_upgrade install font-sauce-code-powerline
 
 # powerline
 fancy_echo "Installing python, because some things just require it ..."
@@ -168,96 +183,96 @@ fancy_echo "Installing powerline, for cool status bar stuff ..."
 
 # must have casks
 fancy_echo "Installing Alfred, the convenient application launcher and keyboard powerhouse ..."
-  brew cask install alfred
+  brew_cask_install_or_upgrade install alfred
   brew cask alfred link
 
 fancy_echo "Installing Google Chrome, for all those glorious web dev tools ..."
-  brew cask install google-chrome
+  brew_cask_install_or_upgrade install google-chrome
 
 fancy_echo "Installing Firefox, yeah, its still useful ..."
-  brew cask install firefox
+  brew_cask_install_or_upgrade install firefox
 
 fancy_echo "Installing Iterm2, the better Terminal for OSX ..."
-  brew cask install iterm2-beta
+  brew_cask_install_or_upgrade install iterm2-beta
 
 fancy_echo "Installing IntelliJ Community Edition, for all your java and scala development needs ..."
-  brew cask install intellij-idea-ce
+  brew_cask_install_or_upgrade install intellij-idea-ce
 
 fancy_echo "Installing AppCleaner, the right way to delete apps from OSX ..."
-  brew cask install appcleaner
+  brew_cask_install_or_upgrade install appcleaner
 
 fancy_echo "Installing Caffeine, a jolt to keep your computer from going to sleep ..."
-  brew cask install caffeine
+  brew_cask_install_or_upgrade install caffeine
 
 fancy_echo "Installing Cyberduck, an excellent ftp, sftp, s3 file transfer tool ..."
-  brew cask install cyberduck
+  brew_cask_install_or_upgrade install cyberduck
 
 fancy_echo "Installing Diffmerge, pairs nicely as the git difftool and mergetool ..."
-  brew cask install diffmerge
+  brew_cask_install_or_upgrade install diffmerge
 
 # fancy_echo "Installing Google Hangouts, a good video chat option ..."
-  # brew cask install google-hangouts
+  # brew_cask_install_or_upgrade install google-hangouts
 
 fancy_echo "Installing PgAdmin3, for managing Postgres DBs ..."
-  brew cask install pgadmin3
+  brew_cask_install_or_upgrade install pgadmin3
 
 fancy_echo "Installing Skype, because unfortunately too many people use it not to ..."
-  brew cask install skype
+  brew_cask_install_or_upgrade install skype
 
 fancy_echo "Installing Sophos Antivirus, because the ops man sayeth ..."
-  brew cask install sophos-anti-virus-home-edition
+  brew_cask_install_or_upgrade install sophos-anti-virus-home-edition
 
 fancy_echo "Installing Sublime Text 3, a soup-du-jour editor ..."
-  brew cask install sublime-text3
+  brew_cask_install_or_upgrade install sublime-text3
 
 fancy_echo "Installing Viscosity, an impressive OpenVPN client ..."
-  brew cask install viscosity
+  brew_cask_install_or_upgrade install viscosity
 
 fancy_echo "Installing Virtualbox, default vm provider for Vagrant ..."
-  brew cask install virtualbox
+  brew_cask_install_or_upgrade install virtualbox
 
 fancy_echo "Installing Vagrant, self-contained virtual development environment management ..."
-  brew cask install vagrant
+  brew_cask_install_or_upgrade install vagrant
 
 fancy_echo "Installing VLC, for all those coding screencasts ..."
-  brew cask install vlc
+  brew_cask_install_or_upgrade install vlc
 
 # good to have casks
 fancy_echo "Installing 1Password, because using the same password twice is just evil ..."
-  brew cask install onepassword
+  brew_cask_install_or_upgrade install onepassword
 
 fancy_echo "Installing Adium, an OTR supporting IM client ..."
-  brew cask install adium
+  brew_cask_install_or_upgrade install adium
 
 fancy_echo "Installing Calibre, a powerful and unintuitive eBook manager ..."
-  brew cask install calibre
+  brew_cask_install_or_upgrade install calibre
 
 fancy_echo "Installing Chromecast, for setting up the surprisingly useful little streamer ..."
-  brew cask install chromecast
+  brew_cask_install_or_upgrade install chromecast
 
 fancy_echo "Installing Cloak, the vpn you can forget to use while still being protected ..."
-  brew cask install cloak
+  brew_cask_install_or_upgrade install cloak
 
 fancy_echo "Installing Crashplan, because loosing data bytes ..."
-  brew cask install crashplan
+  brew_cask_install_or_upgrade install crashplan
 
 fancy_echo "Installing DevonTHINK Pro, for an offline Evernote-like experience ..."
-  brew cask install devonthink-pro
+  brew_cask_install_or_upgrade install devonthink-pro
 
 fancy_echo "Installing Dropbox, the best cloud syncing solution available today ..."
-  brew cask install dropbox
+  brew_cask_install_or_upgrade install dropbox
 
 fancy_echo "Installing f.lux, a tool to help you sleep better through tweaking the colors on your monitor ..."
-  brew cask install flux
+  brew_cask_install_or_upgrade install flux
 
 fancy_echo "Installing Parallels 8, a decent vm for OSX ..."
-  brew cask install parallels8
+  brew_cask_install_or_upgrade install parallels8
 
 fancy_echo "Installing uTorrent, for those legal p2p needs ..."
-  brew cask install utorrent
+  brew_cask_install_or_upgrade install utorrent
 
 fancy_echo "Installing UTC-Menu-Clock, to preserve brainpower from trying to convert timezones ..."
-  brew cask install utc-menu-clock
+  brew_cask_install_or_upgrade install utc-menu-clock
 
 fancy_echo "... All done! Make sure you logout and back in for the preference changes to take affect."
 
