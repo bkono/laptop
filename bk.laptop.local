@@ -224,11 +224,11 @@ fancy_echo "Installing f.lux, a tool to help you sleep better through tweaking t
 fancy_echo "Installing Parallels 8, a decent vm for OSX ..."
   brew cask install parallels8
 
-fancy_echo "Installing TrueCrypt, a great open source volume encryption tool ..."
-  brew cask install truecrypt
-
 fancy_echo "Installing uTorrent, for those legal p2p needs ..."
   brew cask install utorrent
+
+fancy_echo "Installing UTC-Menu-Clock, to preserve brainpower from trying to convert timezones ..."
+  brew cask install utc-menu-clock
 
 fancy_echo "... All done! Make sure you logout and back in for the preference changes to take affect."
 
