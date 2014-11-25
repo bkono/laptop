@@ -85,9 +85,16 @@ fancy_echo "Installing tree, a pretty directory visualizer for the shell ..."
 fancy_echo "Installing the jdk 7, a must for jruby dev ..."
   brew cask install java7
 
+# configure redis to auto-launch
+fancy_echo "Configure redis to autolaunch ..."
+  ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+
 # MEAN stack
 fancy_echo "Installing MongoDB, the M in MEAN Stack ..."
   brew_install_or_upgrade mongodb
+  ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
 
 fancy_echo "Installing CoffeeScript, because Thoughtbots best practices for javascript are 'Use coffeescript' ..."
   npm install -g coffee-script
