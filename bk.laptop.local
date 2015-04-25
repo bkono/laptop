@@ -258,7 +258,7 @@ fancy_echo "Installing Dropbox, the best cloud syncing solution available today 
 fancy_echo "Installing f.lux, a tool to help you sleep better through tweaking the colors on your monitor ..."
   brew_cask_install_or_upgrade flux
 
-fancy_echo "Installing Parallels 8, a decent vm for OSX ..."
+fancy_echo "Installing Parallels Desktop, a decent vm for OSX ..."
   brew_cask_install_or_upgrade parallels-desktop
 
 fancy_echo "Installing uTorrent, for those legal p2p needs ..."
