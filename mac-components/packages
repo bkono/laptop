@@ -39,7 +39,7 @@ fancy_echo "Installing NVM, Node.js, and NPM, for running apps and installing Ja
   fi
 
   source $(brew --prefix nvm)/nvm.sh
-  nvm install "$node_version"
+  nvm install stable
 
   fancy_echo "Setting $node_version as the global default nodejs..."
-  nvm alias default "$node_version"
+  nvm alias default stable
