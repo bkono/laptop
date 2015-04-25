@@ -104,6 +104,9 @@ fi
 
 fancy_echo "Updating Homebrew formulas ..."
 brew update
+
+fancy_echo "Adding brew services for easy launchctl management ..."
+brew tap homebrew/services
 ### end mac-components/homebrew
 
 fancy_echo "Installing Postgres, a good open source relational database ..."
@@ -147,11 +150,18 @@ fancy_echo "Installing NVM, Node.js, and NPM, for running apps and installing Ja
   fi
 
   source $(brew --prefix nvm)/nvm.sh
-  nvm install "$node_version"
+  nvm install stable
 
   fancy_echo "Setting $node_version as the global default nodejs..."
-  nvm alias default "$node_version"
+  nvm alias default stable
 ### end mac-components/packages
+
+fancy_echo "Installing boot2docker, a lightweight ubuntu for docker to use ..."
+  brew_install_or_upgrade 'boot2docker'
+
+  ln -sfv /usr/local/opt/boot2docker/*.plist ~/Library/LaunchAgents
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.boot2docker.plist
+### end mac-components/docker
 
 fancy_echo "Starting Postgres ..."
   brew_launchctl_restart postgresql

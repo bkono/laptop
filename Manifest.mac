@@ -9,6 +9,7 @@ mac-components/mac-functions
 mac-components/zsh-fix
 mac-components/homebrew
 mac-components/packages
+mac-components/docker
 mac-components/start-services
 mac-components/rbenv
 mac-components/compiler-and-libraries
