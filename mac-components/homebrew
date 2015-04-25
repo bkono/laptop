@@ -14,3 +14,6 @@ fi
 
 fancy_echo "Updating Homebrew formulas ..."
 brew update
+
+fancy_echo "Adding brew services for easy launchctl management ..."
+brew tap homebrew/services

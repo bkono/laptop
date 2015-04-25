@@ -1,0 +1,5 @@
+fancy_echo "Installing boot2docker, a lightweight ubuntu for docker to use ..."
+  brew_install_or_upgrade 'boot2docker'
+
+  ln -sfv /usr/local/opt/boot2docker/*.plist ~/Library/LaunchAgents
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.boot2docker.plist
