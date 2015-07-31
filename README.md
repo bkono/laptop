@@ -3,6 +3,18 @@ Laptop
 
 Laptop is a script to set up a Mac OS X or Linux laptop for Rails development.
 
+Important BK Note
+-----------------
+
+This repository, while still functional and a very reasonable approach to setup, is slowly being
+superceded by a combination of the chef-based [kitchenplan](kitchenplan.github.io/kitchenplan),
+[bkono kitchenplan config](github.com/bkono/kitcheplan-config), and
+[chef-zgen](github.com/bkono/chef-zgen). There are a number of reasons for this shift, but the
+primary two are easier idempotency via chef, and (through chef-zgen) dotfiles and potential
+chef-solo based reuse across linux servers and OSX desktops alike. I highly encourage you to check
+out these three projects for your next box repave.
+
+
 Requirements
 ------------
 
